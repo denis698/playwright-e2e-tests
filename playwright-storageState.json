@@ -1,0 +1,59 @@
+{
+    "cookies": [
+      {
+        "name": "nexudus.auth.token",
+        "value": "edsF7P0b4c7oCmQeTVMcKTz1WfMWOOh9S0cAN2_kQXgmaVECIR1o32rJkm4TacwSasxZcUnDZ-KeygAWywVSkfN_IOmUqRYf48YAeMAVZy1nOfINW4MJ9pdRUCDHX406iV1TkepdAMqvH1oHfX6pOOLMEqABjVxlYG_GXzldo8dB_3LoaNe4vfP4QZsum3wUAzscvheQOE7du7GK01SAhoxx3gsPhZDi9kuCrqTvoTGsUGyW5cS9iw1Ik8q6-uxvBdoObpyZjwCimdSu_UuysYtg-JqXhIPaMQhmTLrRYcYlPw4ojm09z9yGnuSZ5-hbZZjLDrF4Ac0yy8Klp9ix255REjED6hsvUF08zX5xjkPe2_MFUF5pLpxUJBG_N6w-sN6urw",
+        "domain": "dashboard.nexudus.com",
+        "path": "/",
+        "expires": -1,
+        "httpOnly": false,
+        "secure": false,
+        "sameSite": "Lax"
+      },
+      {
+        "name": "m",
+        "value": "79bff687-26d1-4cf9-a9e6-09f3afa68b2f5c46cf",
+        "domain": "m.stripe.com",
+        "path": "/",
+        "expires": 1696948837.056628,
+        "httpOnly": true,
+        "secure": true,
+        "sameSite": "None"
+      },
+      {
+        "name": "__stripe_mid",
+        "value": "aacce777-5ea1-4c9e-90cb-a42cf3f101ea9fc498",
+        "domain": ".dashboard.nexudus.com",
+        "path": "/",
+        "expires": 1693924837,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Strict"
+      },
+      {
+        "name": "__stripe_sid",
+        "value": "8e60a2ca-5689-434d-99fd-840bbae11997ad4068",
+        "domain": ".dashboard.nexudus.com",
+        "path": "/",
+        "expires": 1662390637,
+        "httpOnly": false,
+        "secure": true,
+        "sameSite": "Strict"
+      }
+    ],
+    "origins": [
+      {
+        "origin": "https://dashboard.nexudus.com",
+        "localStorage": [
+          {
+            "name": "i18nextLng",
+            "value": "en-GB"
+          },
+          {
+            "name": "navIsDocked",
+            "value": "true"
+          }
+        ]
+      }
+    ]
+  }

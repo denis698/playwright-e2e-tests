@@ -1,0 +1,124 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": [
+      {},
+      {}
+    ],
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/dev/projects/e2e-nexudus/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "Google Chrome",
+        "testDir": "C:/dev/projects/e2e-nexudus/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-result.json"
+        }
+      ],
+      [
+        "C:\\dev\\projects\\e2e-nexudus\\node_modules\\allure-playwright\\dist\\index.js",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "rootDir": "C:/dev/projects/e2e-nexudus/tests",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.25.1",
+    "workers": 2,
+    "webServer": null,
+    "_watchMode": false,
+    "_webServers": [],
+    "_globalOutputDir": "C:\\dev\\projects\\e2e-nexudus\\test-results",
+    "_configDir": "C:\\dev\\projects\\e2e-nexudus",
+    "_testGroupsCount": 1,
+    "_workerIsolation": "isolate-pools"
+  },
+  "suites": [
+    {
+      "title": "login.spec.js",
+      "file": "login.spec.js",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Feature",
+          "file": "login.spec.js",
+          "line": 29,
+          "column": 6,
+          "specs": [
+            {
+              "title": "#001 - should be able to login - @smoke",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "Google Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 9969,
+                      "stdout": [
+                        {
+                          "text": "\ntest - web: should be able to login\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\dev\\projects\\e2e-nexudus\\test-results\\login-Login-Feature-001---should-be-able-to-login---smoke-Google-Chrome\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "login.spec.js",
+              "line": 30,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

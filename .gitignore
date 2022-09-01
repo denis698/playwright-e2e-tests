@@ -1,0 +1,13 @@
+node_modules/
+test-results/
+tests-results/
+playwright-report/
+/playwright/.cache/
+allure-results/
+allure-report/
+html-report/
+Downloads/
+html-report.zip/
+.history/
+.idea/
+.env
