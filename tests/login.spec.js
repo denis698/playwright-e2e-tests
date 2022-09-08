@@ -28,7 +28,7 @@ test.beforeEach(async ({ page }) => {
 
 test.describe('Login Feature', () => {
   test('#001 - should be able to login - @smoke', async ({ page }) => {
-    console.log('\ntest - web: should be able to login');
+    console.log('\ntweb test: should be able to login');
 
     await page.locator(emailTextField).type(String(userName));
     await page.locator(passwordTextField).type(String(password));

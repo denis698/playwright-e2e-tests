@@ -15,11 +15,11 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "C:/dev/projects/e2e-nexudus/test-results",
+        "outputDir": "C:/dev/projects/playwright-e2e-tests/playwright-e2e-tests/test-results",
         "repeatEach": 1,
         "retries": 0,
         "name": "Google Chrome",
-        "testDir": "C:/dev/projects/e2e-nexudus/tests",
+        "testDir": "C:/dev/projects/playwright-e2e-tests/playwright-e2e-tests/tests",
         "testIgnore": [],
         "testMatch": [
           "**/?(*.)@(spec|test).*"
@@ -37,27 +37,23 @@
         {
           "outputFile": "test-result.json"
         }
-      ],
-      [
-        "C:\\dev\\projects\\e2e-nexudus\\node_modules\\allure-playwright\\dist\\index.js",
-        null
       ]
     ],
     "reportSlowTests": {
       "max": 5,
       "threshold": 15000
     },
-    "rootDir": "C:/dev/projects/e2e-nexudus/tests",
+    "rootDir": "C:/dev/projects/playwright-e2e-tests/playwright-e2e-tests/tests",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.25.1",
-    "workers": 2,
+    "workers": 4,
     "webServer": null,
     "_watchMode": false,
     "_webServers": [],
-    "_globalOutputDir": "C:\\dev\\projects\\e2e-nexudus\\test-results",
-    "_configDir": "C:\\dev\\projects\\e2e-nexudus",
+    "_globalOutputDir": "C:\\dev\\projects\\playwright-e2e-tests\\playwright-e2e-tests\\test-results",
+    "_configDir": "C:\\dev\\projects\\playwright-e2e-tests\\playwright-e2e-tests",
     "_testGroupsCount": 1,
     "_workerIsolation": "isolate-pools"
   },
@@ -91,7 +87,7 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 9969,
+                      "duration": 6315,
                       "stdout": [
                         {
                           "text": "\ntest - web: should be able to login\n"
@@ -103,7 +99,7 @@
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\dev\\projects\\e2e-nexudus\\test-results\\login-Login-Feature-001---should-be-able-to-login---smoke-Google-Chrome\\test-finished-1.png"
+                          "path": "C:\\dev\\projects\\playwright-e2e-tests\\playwright-e2e-tests\\test-results\\login-Login-Feature-001---should-be-able-to-login---smoke-Google-Chrome\\test-finished-1.png"
                         }
                       ]
                     }
