@@ -18,42 +18,6 @@
         "outputDir": "C:/dev/projects/playwright-e2e-tests/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "name": "chromium",
-        "testDir": "C:/dev/projects/playwright-e2e-tests/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "**/?(*.)@(spec|test).*"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "C:/dev/projects/playwright-e2e-tests/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "name": "firefox",
-        "testDir": "C:/dev/projects/playwright-e2e-tests/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "**/?(*.)@(spec|test).*"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "C:/dev/projects/playwright-e2e-tests/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "name": "webkit",
-        "testDir": "C:/dev/projects/playwright-e2e-tests/e2e",
-        "testIgnore": [],
-        "testMatch": [
-          "**/?(*.)@(spec|test).*"
-        ],
-        "timeout": 30000
-      },
-      {
-        "outputDir": "C:/dev/projects/playwright-e2e-tests/test-results",
-        "repeatEach": 1,
-        "retries": 0,
         "name": "Google Chrome",
         "testDir": "C:/dev/projects/playwright-e2e-tests/e2e",
         "testIgnore": [],
@@ -90,7 +54,7 @@
     "_webServers": [],
     "_globalOutputDir": "C:\\dev\\projects\\playwright-e2e-tests",
     "_configDir": "C:\\dev\\projects\\playwright-e2e-tests",
-    "_testGroupsCount": 4,
+    "_testGroupsCount": 1,
     "_workerIsolation": "isolate-pools"
   },
   "suites": [
@@ -118,138 +82,12 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectName": "chromium",
+                  "projectName": "Google Chrome",
                   "results": [
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 8570,
-                      "stdout": [
-                        {
-                          "text": "\ntest: should be able to login\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "file": "login.spec.ts",
-              "line": 30,
-              "column": 3
-            }
-          ]
-        },
-        {
-          "title": "Login Feature",
-          "file": "login.spec.ts",
-          "line": 29,
-          "column": 6,
-          "specs": [
-            {
-              "title": "#001 - should be able to login - @smoke",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "status": "passed",
-                      "duration": 9539,
-                      "stdout": [
-                        {
-                          "text": "\ntest: should be able to login\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "file": "login.spec.ts",
-              "line": 30,
-              "column": 3
-            }
-          ]
-        },
-        {
-          "title": "Login Feature",
-          "file": "login.spec.ts",
-          "line": 29,
-          "column": 6,
-          "specs": [
-            {
-              "title": "#001 - should be able to login - @smoke",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "status": "passed",
-                      "duration": 12052,
-                      "stdout": [
-                        {
-                          "text": "\ntest: should be able to login\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "file": "login.spec.ts",
-              "line": 30,
-              "column": 3
-            }
-          ]
-        },
-        {
-          "title": "Login Feature",
-          "file": "login.spec.ts",
-          "line": 29,
-          "column": 6,
-          "specs": [
-            {
-              "title": "#001 - should be able to login - @smoke",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "Google Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "status": "passed",
-                      "duration": 10503,
+                      "duration": 6563,
                       "stdout": [
                         {
                           "text": "\ntest: should be able to login\n"
