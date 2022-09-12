@@ -1,7 +1,7 @@
 {
   "config": {
     "forbidOnly": false,
-    "fullyParallel": false,
+    "fullyParallel": true,
     "globalSetup": null,
     "globalTeardown": null,
     "globalTimeout": 0,
@@ -15,16 +15,52 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "C:/dev/projects/playwright-e2e-tests/playwright-e2e-tests/test-results",
+        "outputDir": "C:/dev/projects/playwright-e2e-tests/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "name": "Google Chrome",
-        "testDir": "C:/dev/projects/playwright-e2e-tests/playwright-e2e-tests/tests",
+        "name": "chromium",
+        "testDir": "C:/dev/projects/playwright-e2e-tests/e2e",
         "testIgnore": [],
         "testMatch": [
           "**/?(*.)@(spec|test).*"
         ],
-        "timeout": 60000
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/dev/projects/playwright-e2e-tests/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "firefox",
+        "testDir": "C:/dev/projects/playwright-e2e-tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/dev/projects/playwright-e2e-tests/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "webkit",
+        "testDir": "C:/dev/projects/playwright-e2e-tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/dev/projects/playwright-e2e-tests/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "Google Chrome",
+        "testDir": "C:/dev/projects/playwright-e2e-tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/?(*.)@(spec|test).*"
+        ],
+        "timeout": 30000
       }
     ],
     "reporter": [
@@ -43,31 +79,31 @@
       "max": 5,
       "threshold": 15000
     },
-    "rootDir": "C:/dev/projects/playwright-e2e-tests/playwright-e2e-tests/tests",
+    "rootDir": "C:/dev/projects/playwright-e2e-tests/e2e",
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.25.1",
+    "version": "1.25.2",
     "workers": 4,
     "webServer": null,
     "_watchMode": false,
     "_webServers": [],
-    "_globalOutputDir": "C:\\dev\\projects\\playwright-e2e-tests\\playwright-e2e-tests\\test-results",
-    "_configDir": "C:\\dev\\projects\\playwright-e2e-tests\\playwright-e2e-tests",
-    "_testGroupsCount": 1,
+    "_globalOutputDir": "C:\\dev\\projects\\playwright-e2e-tests",
+    "_configDir": "C:\\dev\\projects\\playwright-e2e-tests",
+    "_testGroupsCount": 4,
     "_workerIsolation": "isolate-pools"
   },
   "suites": [
     {
-      "title": "login.spec.js",
-      "file": "login.spec.js",
+      "title": "login.spec.ts",
+      "file": "login.spec.ts",
       "line": 0,
       "column": 0,
       "specs": [],
       "suites": [
         {
           "title": "Login Feature",
-          "file": "login.spec.js",
+          "file": "login.spec.ts",
           "line": 29,
           "column": 6,
           "specs": [
@@ -79,18 +115,144 @@
               ],
               "tests": [
                 {
-                  "timeout": 60000,
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 8570,
+                      "stdout": [
+                        {
+                          "text": "\ntest: should be able to login\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "login.spec.ts",
+              "line": 30,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Login Feature",
+          "file": "login.spec.ts",
+          "line": 29,
+          "column": 6,
+          "specs": [
+            {
+              "title": "#001 - should be able to login - @smoke",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 9539,
+                      "stdout": [
+                        {
+                          "text": "\ntest: should be able to login\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "login.spec.ts",
+              "line": 30,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Login Feature",
+          "file": "login.spec.ts",
+          "line": 29,
+          "column": 6,
+          "specs": [
+            {
+              "title": "#001 - should be able to login - @smoke",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 12052,
+                      "stdout": [
+                        {
+                          "text": "\ntest: should be able to login\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "login.spec.ts",
+              "line": 30,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Login Feature",
+          "file": "login.spec.ts",
+          "line": 29,
+          "column": 6,
+          "specs": [
+            {
+              "title": "#001 - should be able to login - @smoke",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectName": "Google Chrome",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 3,
                       "status": "passed",
-                      "duration": 6315,
+                      "duration": 10503,
                       "stdout": [
                         {
-                          "text": "\ntest - web: should be able to login\n"
+                          "text": "\ntest: should be able to login\n"
                         }
                       ],
                       "stderr": [],
@@ -99,7 +261,7 @@
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\dev\\projects\\playwright-e2e-tests\\playwright-e2e-tests\\test-results\\login-Login-Feature-001---should-be-able-to-login---smoke-Google-Chrome\\test-finished-1.png"
+                          "path": "C:\\dev\\projects\\playwright-e2e-tests\\test-results\\login-Login-Feature-001---should-be-able-to-login---smoke-Google-Chrome\\test-finished-1.png"
                         }
                       ]
                     }
@@ -107,7 +269,7 @@
                   "status": "expected"
                 }
               ],
-              "file": "login.spec.js",
+              "file": "login.spec.ts",
               "line": 30,
               "column": 3
             }

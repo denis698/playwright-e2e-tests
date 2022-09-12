@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 
-const url = process.env.BASE_URL;
+const url = process.env.PLAYWRIGHT_TEST_BASE_URL;
 const userName = process.env.USER_NAME;
 const password = process.env.PASSWORD;
 
@@ -28,14 +28,14 @@ test.beforeEach(async ({ page }) => {
 
 test.describe('Login Feature', () => {
   test('#001 - should be able to login - @smoke', async ({ page }) => {
-    console.log('\ntweb test: should be able to login');
+    console.log('\ntest: should be able to login');
 
     await page.locator(emailTextField).type(String(userName));
     await page.locator(passwordTextField).type(String(password));
     await page.locator('button', { hasText: 'Sign in' }).click();
 
     await page.waitForLoadState('networkidle');
-    await page.waitForURL(process.env.BASE_URL + '/dashboards/now');
+    await page.waitForURL(url + '/dashboards/now');
     await expect(page).toHaveTitle(/Kalkio Space - East Side/);
 
     await page.waitForSelector(header, {state:'visible'});
